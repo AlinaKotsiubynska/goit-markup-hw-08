@@ -91,11 +91,14 @@ img {
 
 .section-title, .works__title, .team__title, .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17%em;
+  font-size: 28px;
+  line-height: 1.17em;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+
+.section-title:not(:last-child), .works__title:not(:last-child), .team__title:not(:last-child), .clients__title:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .social-media {
@@ -468,12 +471,8 @@ img {
   background-color: var(--background-light-color);
 }
 
-.team__list {
-  display: flex;
-}
-
 .team__member {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
@@ -481,7 +480,7 @@ img {
 }
 
 .team__member:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .member__pic {

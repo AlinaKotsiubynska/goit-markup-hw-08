@@ -91,11 +91,14 @@ img {
 
 .section-title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17%em;
+  font-size: 28px;
+  line-height: 1.17em;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+}
+
+.section-title:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .btn {
