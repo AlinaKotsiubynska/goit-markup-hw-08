@@ -1,0 +1,17 @@
+.container {
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  // width: 1200px;
+  // margin: auto;
+  // padding-left: 15px;
+  // padding-right: 15px;
+
+  &.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    // padding-top: 94px;
+    // padding-bottom: 94px;
+  }
+}

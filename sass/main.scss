@@ -1,0 +1,21 @@
+@import "./utils/css-variables";
+@import "./utils/placeholders";
+@import "./utils/mixins";
+@import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
+@import "./components/shared/social-links";
+@import "./components/shared/buttons";
+@import "./components/shared/logo";
+@import "./components/shared/page-header";
+@import "./components/shared/footer";
+
+@import "./components/home/features";
+@import "./components/home/hero";
+@import "./components/home/works";
+@import "./components/home/team";
+@import "./components/home/clients";
+@import "./components/home/modal-window";
