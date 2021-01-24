@@ -15,8 +15,8 @@
 
 .header__container {
   @extend .container;
-  position: fixed;
-  // position: relative;
+  // position: fixed;
+  position: relative;
 
   display: flex;
   align-items: center;
