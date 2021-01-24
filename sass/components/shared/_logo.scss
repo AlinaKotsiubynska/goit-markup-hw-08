@@ -1,9 +1,10 @@
 .logo {
   font-family: var(--logo-font);
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 
+  // font-size: 26px;
   &-web {
     color: var(--acent-color);
     font-family: var(--logo-font);
@@ -16,7 +17,7 @@
 }
 
 .footer__logo {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   color: var(--white-color);
 }
