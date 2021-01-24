@@ -81,10 +81,7 @@ img {
 .container, .header__container {
   min-width: 320px;
   max-width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -157,6 +154,8 @@ img {
 
 .header__container {
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
