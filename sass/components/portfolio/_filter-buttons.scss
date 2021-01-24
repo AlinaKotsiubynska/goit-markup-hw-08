@@ -1,15 +1,26 @@
+.filters_container {
+  margin-bottom: 40px;
+}
+
 .portfolio__filters {
   display: flex;
-  margin-bottom: 50px;
-  justify-content: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  margin: -8px;
+  // margin-bottom: 50px;
+  // justify-content: center;
 }
 
 .portfolio__filter {
   display: block;
+  margin: 8px 8px 8px 0;
 
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  // &:not(:last-child) {
+  //   // margin-right: 8px;
+  //   // margin-top: 8px;
+  //   // margin-bottom: 8px;
+  //   margin: 8px 8px 8px 0;
+  // }
 }
 
 .portfolio__btn {

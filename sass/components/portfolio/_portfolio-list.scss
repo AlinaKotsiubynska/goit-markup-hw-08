@@ -1,15 +1,19 @@
 .portfolio__cards {
+  margin: -15px;
   display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * var(--portfolio-item-gep));
-  margin-left: calc(-1 * var(--portfolio-item-gep));
+  flex-direction: column;
+  // display: flex;
+  // flex-wrap: wrap;
+  // margin-top: calc(-1 * var(--portfolio-item-gep));
+  // margin-left: calc(-1 * var(--portfolio-item-gep));
 }
 
 .portfolio__card {
-  flex-basis: calc(100% / 3 - 30px);
+  margin: 15px;
+  // flex-basis: calc(100% / 3 - 30px);
 
-  margin-top: var(--portfolio-item-gep);
-  margin-left: var(--portfolio-item-gep);
+  // margin-top: var(--portfolio-item-gep);
+  // margin-left: var(--portfolio-item-gep);
 }
 
 .portfolio__link {
