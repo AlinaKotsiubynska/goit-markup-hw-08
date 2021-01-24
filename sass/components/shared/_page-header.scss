@@ -4,7 +4,7 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  position: fixed;
+  // position: fixed;
 
   // font-size: 14px;
   // line-height: 1.17em;
@@ -15,7 +15,7 @@
 
 .header__container {
   @extend .container;
-  // position: fixed;
+  position: fixed;
   // position: relative;
 
   display: flex;

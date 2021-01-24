@@ -148,7 +148,6 @@ img {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  position: fixed;
 }
 
 .header.portfolio {
@@ -156,6 +155,7 @@ img {
 }
 
 .header__container {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;

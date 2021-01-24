@@ -188,7 +188,6 @@ img {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  position: fixed;
 }
 
 .header.portfolio {
@@ -196,6 +195,7 @@ img {
 }
 
 .header__container {
+  position: fixed;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -437,12 +437,6 @@ img {
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
-}
-
-@media screen and (max-width: 480px) {
-  body {
-    padding-top: 60px;
-  }
 }
 
 .hero {
