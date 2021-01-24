@@ -14,47 +14,57 @@
 
 <body>
   <!--header-->
-      <!-- <header class="header portfolio">
+      <header class="header portfolio">
         <div class="header__container">
           <a class="logo header__logo link" href="./index.html" aria-label="логотип"><span
               class="logo-web">Web</span>Studio</a>
-          <nav class="header__nav">
+          <button class="menu__button" type="button" aria-label="кнопка навигации" aria-expanded="false" data-menu-button>
+            <svg width="40" height="40">
+              <use class="icon__burger" href="./images/sprite.svg#icon-menu-burger" aria-label="открыть навигацию"></use>
+              <use class="icon__cross" href="./images/sprite.svg#icon-menu-cross" aria-label="закрыть навигацию"></use>
+            </svg>
+          </button>
+          <nav class="header__nav" data-menu>
             <ul class="nav__pages list">
               <li class="nav__page">
-                <a class="nav__link  link" href="./index.html">Студия</a>
+                <a class="nav__link link" href="./index.html">
+                  <span>Студия</span></a>
               </li>
               <li class="nav__page">
-                <a class="nav__link nav__link--current link" href="./portfolio.html">Портфолио</a>
+                <a class="nav__link link" href="./portfolio.html">
+                  <span class="nav__link--current">Портфолио</span></a>
               </li>
               <li class="nav__page">
-                <a class="nav__link link" href="">Контакты</a>
+                <a class="nav__link link" href="">
+                  <span>Контакты</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="header__contacts list">
+              <li class="header__contact">
+                <a class="contact__link link" target="_blank" rel="noopener noreferrer" href="mailto:info@devstudio.com">
+                  <div class="contact__icon">
+                    <svg width="16" height="12">
+                      <use href="./images/sprite.svg#icon-envelope"></use>
+                    </svg>
+                  </div>
+                  <span>info@devstudio.com</span>
+                </a>
+              </li>
+              <li class="header__contact">
+                <a class="contact__link link" target="_blank" rel="noopener noreferrer" href="tel:+380961111111">
+                  <div class="contact__icon">
+                    <svg width="10" height="16">
+                      <use href="./images/sprite.svg#icon-smartphone"></use>
+                    </svg>
+                  </div>
+                  +38 096 111 11 11
+                </a>
               </li>
             </ul>
           </nav>
-          <ul class="header__contacts list">
-            <li class="header__contact">
-              <a class="contact__link link" target="_blank" rel="noopener noreferrer" href="mailto:info@devstudio.com">
-                <div class="contact__icon">
-                  <svg width="16" height="12">
-                    <use href="./images/sprite.svg#icon-envelope"></use>
-                  </svg>
-                </div>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header__contact">
-              <a class="contact__link link" target="_blank" rel="noopener noreferrer" href="tel:+380961111111">
-                <div class="contact__icon">
-                  <svg width="10" height="16">
-                    <use href="./images/sprite.svg#icon-smartphone"></use>
-                  </svg>
-                </div>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
         </div>
-      </header> -->
+      </header>
   
   <main>
     
@@ -78,13 +88,19 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img11-1.webp 1x, 
-                                  ./images/optimized/portfolio/img11-2.webp 2x" type="image/webp" />
-                  <img class="portfolio__img" srcset="./images/optimized/portfolio/img11-2х.jpg 2x" src="./images/optimized/portfolio/img11-1х.jpg"
+                  <source srcset="./images/optimized/portfolio/img11-d1x.webp 1x, ./images/optimized/portfolio/img11-d2x.webp 2x"
+                    media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img11-d1x.jpg 1x, ./images/optimized/portfolio/img11-d2x.jpg 2x"
+                    media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img11-t1x.webp 1x, ./images/optimized/portfolio/img11-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img11-t1х.jpg 1x, ./images/optimized/portfolio/img11-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img11-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img11-2x.webp 2x" type="image/webp">
+                  <img srcset="./images/optimized/portfolio/img11-2х.jpg 2x" src="./images/optimized/portfolio/img11-1х.jpg"
                     alt="Экран ноутбука с примером сайта" />
                 </picture>
-                <!-- <img  src="./images/portfolio/tehnokriak-img.jpg" alt="Экран ноутбука с примером сайта" width="370"
-                  height="294"> -->
                 <p class="card__description">
                   Технокряк это современная площадка распространения коронавируса.
                   Компании используют эту платформу для цифрового
@@ -102,8 +118,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img22-1.webp 1x, 
-                                  ./images/optimized/portfolio/img22-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img22-d1x.webp 1x, ./images/optimized/portfolio/img22-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img22-d1x.jpg 1x, ./images/optimized/portfolio/img22-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img22-t1x.webp 1x, ./images/optimized/portfolio/img22-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img22-t1х.jpg 1x, ./images/optimized/portfolio/img22-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img22-1х.jpg 1x, 
+                                  ./images/optimized/portfolio/img22-2х.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img22-2х.jpg 2x"
                     src="./images/optimized/portfolio/img22-1х.jpg" alt="Два баскетболиста играют" />
                 </picture>
@@ -124,8 +146,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img33-1.webp 1x, 
-                                  ./images/optimized/portfolio/img33-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img33-d1x.webp 1x, ./images/optimized/portfolio/img33-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img33-d1x.jpg 1x, ./images/optimized/portfolio/img33-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img33-t1x.webp 1x, ./images/optimized/portfolio/img33-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img33-t1х.jpg 1x, ./images/optimized/portfolio/img33-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img33-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img33-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img33-2х.jpg 2x"
                     src="./images/optimized/portfolio/img33-1х.jpg" alt="Логотип ресторана с рыбой" />
                 </picture>
@@ -146,8 +174,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img44-1.webp 1x, 
-                                  ./images/optimized/portfolio/img44-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img44-d1x.webp 1x, ./images/optimized/portfolio/img44-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img44-d1x.jpg 1x, ./images/optimized/portfolio/img44-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img44-t1x.webp 1x, ./images/optimized/portfolio/img44-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img44-t1х.jpg 1x, ./images/optimized/portfolio/img44-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img44-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img44-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img44-2х.jpg 2x"
                     src="./images/optimized/portfolio/img44-1х.jpg" alt="Наушники" />
                 </picture>
@@ -168,8 +202,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img55-1.webp 1x, 
-                                  ./images/optimized/portfolio/img55-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img55-d1x.webp 1x, ./images/optimized/portfolio/img55-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img55-d1x.jpg 1x, ./images/optimized/portfolio/img55-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img55-t1x.webp 1x, ./images/optimized/portfolio/img55-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img55-t1х.jpg 1x, ./images/optimized/portfolio/img55-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img55-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img55-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img55-2х.jpg 2x"
                     src="./images/optimized/portfolio/img55-1х.jpg" alt="Две коробочки" />
                 </picture>
@@ -190,8 +230,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img66-1.webp 1x, 
-                                  ./images/optimized/portfolio/img66-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img66-d1x.webp 1x, ./images/optimized/portfolio/img66-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img66-d1x.jpg 1x, ./images/optimized/portfolio/img66-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img66-t1x.webp 1x, ./images/optimized/portfolio/img66-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img66-t1х.jpg 1x, ./images/optimized/portfolio/img66-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img66-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img66-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img66-2х.jpg 2x"
                     src="./images/optimized/portfolio/img66-1х.jpg" alt="Экран компьютера с иллюстрацией проекта" />
                 </picture>
@@ -212,8 +258,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img77-1.webp 1x, 
-                                  ./images/optimized/portfolio/img77-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img77-d1x.webp 1x, ./images/optimized/portfolio/img77-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img77-d1x.jpg 1x, ./images/optimized/portfolio/img77-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img77-t1x.webp 1x, ./images/optimized/portfolio/img77-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img77-t1х.jpg 1x, ./images/optimized/portfolio/img77-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img77-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img77-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img77-2х.jpg 2x"
                     src="./images/optimized/portfolio/img77-1х.jpg" alt="Открытый журнал" />
                 </picture>
@@ -234,8 +286,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img88-1.webp 1x, 
-                                  ./images/optimized/portfolio/img88-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img88-d1x.webp 1x, ./images/optimized/portfolio/img88-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img88-d1x.jpg 1x, /images/optimized/portfolio/img88-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img88-t1x.webp 1x, ./images/optimized/portfolio/img88-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img88-t1х.jpg 1x, ./images/optimized/portfolio/img88-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img88-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img88-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img88-2х.jpg 2x"
                     src="./images/optimized/portfolio/img88-1х.jpg" alt="Бирка с логотирпом" />
                 </picture>
@@ -256,8 +314,14 @@
             <a class="portfolio__link link" href="" target="_blank" rel="noopener noreferrer"  >
               <div class="card__thumb">
                 <picture>
-                  <source srcset="./images/optimized/portfolio/img99-1.webp 1x, 
-                                  ./images/optimized/portfolio/img99-2.webp 2x" type="image/webp" />
+                  <source srcset="./images/optimized/portfolio/img88-d1x.webp 1x, ./images/optimized/portfolio/img88-d2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img88-d1x.jpg 1x, ./images/optimized/portfolio/img88-d2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/optimized/portfolio/img88-t1x.webp 1x, ./images/optimized/portfolio/img88-t2x.webp 2x"
+                    media="(min-width: 768px)" type="image/webp">
+                  <source srcset="./images/optimized/portfolio/img88-t1х.jpg 1x, ./images/optimized/portfolio/img88-t2х.jpg 2x"
+                    media="(min-width: 768px)">
+                  <source srcset="./images/optimized/portfolio/img99-1x.webp 1x, 
+                                  ./images/optimized/portfolio/img99-2x.webp 2x" type="image/webp" />
                   <img class="portfolio__img" srcset="./images/optimized/portfolio/img99-2х.jpg 2x"
                     src="./images/optimized/portfolio/img99-1х.jpg" alt="Человек печатает на ноутбуке" />
                 </picture>
@@ -351,7 +415,8 @@
             </form>
           </div>
        </div>
-      </footer>
+    </footer>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>

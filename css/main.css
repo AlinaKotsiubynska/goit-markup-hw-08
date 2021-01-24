@@ -390,6 +390,8 @@ img {
 }
 
 .subscribe__btn {
+  display: flex;
+  align-items: center;
   padding-left: 29px;
   padding-right: 29px;
   margin: 0 auto;
@@ -515,7 +517,7 @@ img {
   margin: 0 auto;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1199px) {
   .works {
     display: none;
   }

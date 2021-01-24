@@ -350,6 +350,8 @@ img {
 }
 
 .subscribe__btn {
+  display: flex;
+  align-items: center;
   padding-left: 29px;
   padding-right: 29px;
   margin: 0 auto;

@@ -138,15 +138,28 @@
             <h2 class="works__title">Чем мы занимаемся</h2>
             <ul class="works__list list">
               <li class="works__item">
-                <img src="./images/typing.jpg" alt="человек печатает на клавиатуре" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/optimized/works/img.1-1x.webp 1x, ./images/optimized/works/img.1-2x.webp 2x" type="image/webp" />
+                  <img src="./images/optimized/works/img.1-1x.jpg" srcset="./images/optimized/works/img.1-2x.jpg 2x" alt="человек печатает на клавиатуре" />
+                </picture>
                 <p class="works__label">Десктопные приложения</p>
               </li>
               <li class="works__item">
-                <img src="./images/looking-on-smartphone.jpg" alt="человек смотрит на смартфон" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/optimized/works/img.2-1x.webp 1x, ./images/optimized/works/img.2-2x.webp 2x"
+                    type="image/webp" />
+                  <img src="./images/optimized/works/img.2-1x.jpg" srcset="./images/optimized/works/img.2-2x.jpg 2x"
+                    alt="человек смотрит на смартфон" />
+                </picture>
                 <p class="works__label">Мобильные приложения</p>
               </li>
               <li class="works__item">
-                <img src="./images/looking-on-tablet.jpg" alt="человек работает с планшетом" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/optimized/works/img.3-1x.webp 1x, ./images/optimized/works/img.3-2x.webp 2x"
+                    type="image/webp" />
+                  <img src="./images/optimized/works/img.3-1x.jpg" srcset="./images/optimized/works/img.3-2x.jpg 2x"
+                    alt="человек работает с планшетом" />
+                </picture>
                 <p class="works__label">Дизайнерские решения</p>
               </li>
             </ul>
@@ -172,8 +185,8 @@
                   media="(min-width: 768px)">
                 <source srcset="./images/optimized/team/img1-1x.webp 1x, ./images/optimized/team/img1-2x.webp 2x" type="image/webp" />
                 <img class="member__pic" 
-                    srcset="./images/optimized/team/img1-2х.jpg 2x" 
-                    src="./images/optimized/team/img1-1х.jpg"
+                    srcset="./images/optimized/team/img1-1х.jpg 1x, ./images/optimized/team/img1-2х.jpg 2x" 
+                    src="./images/optimized/team/img1.jpg"
                     alt="Игорь Демьяненко" />
               </picture>
               <h3 class="member__name">Игорь Демьяненко</h3>
@@ -319,8 +332,8 @@
                   media="(min-width: 768px)">
                 <source srcset="./images/optimized/team/img4-1x.webp 1x, ./images/optimized/team/img4-2x.webp 2x" type="image/webp" />
                 <img class="member__pic" 
-                    srcset="./images/optimized/team/img4-2х.jpg 2x" 
-                    src="./images/optimized/team/img4-1х.jpg"
+                    srcset="./images/optimized/team/img4-1х.jpg 1x, ./images/optimized/team/img4-2х.jpg 2x" 
+                    src="./images/optimized/team/img1.jpg"
                     alt="Михаил Ермаков" />
               </picture>
               <h3 class="member__name">Михаил Ермаков</h3>
@@ -542,6 +555,7 @@
     </div>      
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 <!---->
