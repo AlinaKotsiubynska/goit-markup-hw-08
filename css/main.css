@@ -8,6 +8,7 @@
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --background-light-color: #f5f4fa;
   --icon-main-color: #afb1b8;
+  --header-border: #ececec;
   --main-font: "Roboto", sans-serif;
   --logo-font: "Raleway", sans-serif;
   --portfolio-item-gep: 30px;
@@ -82,6 +83,8 @@ img {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .container.section, .section.header__container, .section.hero__container {
@@ -171,7 +174,6 @@ img {
 
 .header__logo {
   color: var(--logo-dark-color);
-  margin-right: 93px;
 }
 
 .footer__logo {
@@ -183,37 +185,50 @@ img {
 .header {
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17em;
+  font-size: 18px;
+  line-height: 1.22;
   letter-spacing: 0.02em;
+  position: fixed;
 }
 
 .header.portfolio {
-  border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid var(--header-border);
 }
 
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header__nav {
-  display: flex;
-  align-items: center;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  padding: 40px 0 60px;
+  border-top: 1px solid var(--header-border);
+  background-color: var(--white-color);
+}
+
+.header__nav.is-open {
+  display: block;
 }
 
 .nav__pages {
-  display: flex;
-  align-items: center;
+  margin-bottom: 40px;
 }
 
-.nav__page:not(:last-child) {
-  margin-right: 50px;
+.nav__page {
+  text-align: center;
+  margin: 0 auto;
 }
 
 .nav__link {
   display: block;
-  padding: 32px 0;
+  padding: 20px 0;
   color: var(--title-color);
   text-decoration: none;
   transition: var(--time-transition) var(--duration-transition);
@@ -226,8 +241,8 @@ img {
 
 .nav__link--current {
   position: relative;
-  display: block;
   color: var(--acent-color);
+  padding-bottom: 8px;
 }
 
 .nav__link--current::after {
@@ -242,18 +257,18 @@ img {
 }
 
 .header__contacts {
-  margin-left: auto;
   display: flex;
+  flex-direction: column;
   color: var(--main-color);
   transition: var(--time-transition) var(--duration-transition);
 }
 
 .header__contact {
-  display: flex;
+  margin: 0 auto;
 }
 
 .header__contact:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 16px;
 }
 
 .contact__link {
@@ -271,6 +286,32 @@ img {
 .contact__icon {
   margin-right: 10px;
   margin-top: 1px;
+}
+
+.menu__button {
+  display: block;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  transition: var(--time-transition) var(--duration-transition);
+}
+
+.menu__button:hover, .menu__button:focus {
+  fill: var(--acent-color);
+}
+
+.menu__button .icon__cross {
+  display: none;
+}
+
+.menu__button.is-open .icon__cross {
+  display: block;
+}
+
+.menu__button.is-open .icon__burger {
+  display: none;
 }
 
 .footer {
@@ -398,12 +439,49 @@ img {
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../../images/optimized/hero/hero-1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/optimized/hero/hero-1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   min-width: 320px;
+}
+
+@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../../images/optimized/hero/hero-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .hero {
+    background-image: url("../../../images/optimized/hero/hero_tablet-1x.jpg");
+  }
+}
+
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../../images/optimized/hero/hero_tablet-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .hero {
+    background-image: url("../../../images/optimized/hero/hero_desk-1x.jpg");
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 767px) and (min-device-pixel-ratio: 2), screen and (min-width: 767px) and (min-resolution: 192dpi), screen and (min-width: 767px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../../../images/optimized/hero/hero_desk-2x.jpg");
+  }
 }
 
 .hero__container {
