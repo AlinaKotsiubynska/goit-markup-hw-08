@@ -596,6 +596,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__list {
+    margin: 0 0 94px;
+    justify-content: space-between;
+  }
+}
+
 .features__item {
   margin: 15px;
 }
@@ -604,6 +611,13 @@ img {
   .features__item {
     width: 354px;
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+    margin: 0;
   }
 }
 
