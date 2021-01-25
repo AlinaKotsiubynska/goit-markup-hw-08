@@ -2,6 +2,12 @@
   display: flex;
   margin-right: -10px;
   justify-content: center;
+
+  .footer & {
+    @media screen and (min-width: 1200px) {
+      justify-content: start;
+    }
+  }
 }
 
 .social-media__item {

@@ -125,6 +125,12 @@ img {
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer .social-media {
+    justify-content: start;
+  }
+}
+
 .social-media__item {
   display: flex;
   margin-right: 10px;
@@ -473,12 +479,24 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container.footer, .footer.header__container, .footer.hero__container {
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
 .footer__addresses {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 60px;
   width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__addresses {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -487,14 +505,33 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__addresses {
+    width: 25%;
+    text-align: left;
+  }
+}
+
 .footer__join {
   text-align: center;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer__join {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer__join {
     width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__join {
+    width: 25%;
+    text-align: left;
   }
 }
 
@@ -533,9 +570,22 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    width: 50%;
+    text-align: left;
+  }
+}
+
 .subscribe__form {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    flex-direction: row;
+  }
 }
 
 .subscribe__input {
@@ -563,12 +613,24 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 358px;
+    margin: 0 12px 0 0;
+  }
+}
+
 .subscribe__btn {
   display: flex;
   align-items: center;
-  padding-left: 29px;
-  padding-right: 29px;
+  padding: 0 29px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe__btn {
+    margin: 0;
+  }
 }
 
 .icon__send {
@@ -884,6 +946,13 @@ img {
   border: 1px solid var(--icon-main-color);
   border-radius: 4px;
   transition: var(--time-transition) var(--duration-transition);
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 90px;
+  }
 }
 
 .clients__link:hover, .clients__link:focus {
