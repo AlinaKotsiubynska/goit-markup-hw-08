@@ -4,6 +4,12 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+
   // position: fixed;
 
   // font-size: 14px;
@@ -16,33 +22,43 @@
 .header__container {
   @extend .container;
   // position: fixed;
-  position: relative;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
+  @media screen and (max-width: 767px) {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
   display: flex;
   align-items: center;
   justify-content: space-between;
+  //   padding-bottom: 21px;
+  //   padding-top: 21px;
 }
 
 .header__nav {
-  display: none;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  z-index: 2;
-  padding: 40px 0 60px;
-  border-top: 1px solid var(--header-border);
-
-  // display: flex;
-  // align-items: center;
-
   background-color: var(--white-color);
 
-  &.is-open {
-    display: block;
+  @media screen and (max-width: 767px) {
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 40px 0 60px;
+    border-top: 1px solid var(--header-border);
+
+    &.is-open {
+      display: block;
+    }
+    // align-items: center;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -50,23 +66,46 @@
   // display: flex;
   // align-items: center;
   // margin: 0 auto;
-  margin-bottom: 40px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-right: 84px;
+  }
 }
 
 .nav__page {
   text-align: center;
   // width: 100%;
-  margin: 0 auto;
 
-  // &:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
+
+// .nav__page:not(:last-child) {
+//   @media screen and (min-width: 768px) {
+//       margin-right: 50px;
+//   }
+// }
+
 .nav__link {
   display: block;
-  // padding: 32px 0;
-  padding: 20px 0;
 
+  @media screen and (max-width: 767px) {
+    padding: 20px 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 32px 0;
+  }
   color: var(--title-color);
   text-decoration: none;
 
@@ -83,6 +122,10 @@
     // display: block;
     color: var(--acent-color);
     padding-bottom: 8px;
+
+    @media screen and (min-width: 768px) {
+      padding-bottom: 32px;
+    }
 
     &::after {
       position: absolute;
@@ -101,12 +144,13 @@
 
 .header__contacts {
   // margin-left: auto;
-  display: flex;
-  flex-direction: column;
+
   // justify-content: center;
   // margin: 0 auto;
-
+  display: flex;
+  flex-direction: column;
   color: var(--main-color);
+  width: 100%;
 
   transition: var(--time-transition) var(--duration-transition);
 }
@@ -114,20 +158,31 @@
 .header__contact {
   // display: flex;
   // flex-direction: column;
-  margin: 0 auto;
+
   // justify-content: center;
-
-  &:not(:last-child) {
-    margin-bottom: 16px;
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
+  @media screen and (min-width: 768px) {
+    justify-content: left;
+    font-size: 12px;
+    line-height: 1.16;
 
-  //   &:not(:last-child) {
-  //     margin-right: 50px;
-  //   }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
 
 .contact__link {
   display: flex;
+
   color: var(--main-color);
   fill: var(--main-color);
 
@@ -143,6 +198,10 @@
 .contact__icon {
   margin-right: 10px;
   margin-top: 1px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 8px;
+  }
 }
 
 .menu__button {
@@ -159,6 +218,10 @@
   &:focus {
     fill: var(--acent-color);
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu__button .icon__cross {
@@ -173,10 +236,3 @@
     display: none;
   }
 }
-// .icon {
-//   &__burger {
-//   }
-
-//   &__cross {
-//   }
-// }
