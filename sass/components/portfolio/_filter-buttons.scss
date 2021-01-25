@@ -1,4 +1,4 @@
-.filters_container {
+.filters__container {
   margin-bottom: 40px;
 }
 
@@ -7,6 +7,10 @@
   margin-bottom: 40px;
   flex-wrap: wrap;
   margin: -8px;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
   // margin-bottom: 50px;
   // justify-content: center;
 }
@@ -15,6 +19,11 @@
   display: block;
   margin: 8px 8px 8px 0;
 
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
   // &:not(:last-child) {
   //   // margin-right: 8px;
   //   // margin-top: 8px;

@@ -107,6 +107,20 @@ img {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 1199px) {
+  .container.section__portfolio, .section__portfolio.header__container, .section__portfolio.hero__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container.section__portfolio, .section__portfolio.header__container, .section__portfolio.hero__container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .section-title, .works__title, .team__title, .clients__title {
   font-weight: 700;
   font-size: 28px;
@@ -516,12 +530,6 @@ img {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
-  .footer__join {
-    margin-bottom: 60px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer__join {
     width: 50%;
@@ -562,6 +570,12 @@ img {
 
 .footer__subscribe {
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer__subscribe {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -623,6 +637,7 @@ img {
 .subscribe__btn {
   display: flex;
   align-items: center;
+  height: 50px;
   padding: 0 29px;
   margin: 0 auto;
 }
