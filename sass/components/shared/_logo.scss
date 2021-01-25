@@ -4,7 +4,11 @@
   line-height: 1.17;
   letter-spacing: 0.03em;
 
-  // font-size: 26px;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+
   &-web {
     color: var(--acent-color);
     font-family: var(--logo-font);
