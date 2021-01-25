@@ -655,8 +655,22 @@ img {
   height: 20px;
 }
 
-.filters__container {
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  .filters__container {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filters__container {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filters__container {
+    margin-bottom: 50px;
+  }
 }
 
 .portfolio__filters {
@@ -714,8 +728,21 @@ img {
   flex-direction: column;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio__cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
 .portfolio__card {
   margin: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    width: 354px;
+  }
 }
 
 .portfolio__link {
