@@ -6,7 +6,17 @@
   }
 
   &__list {
-    // display: flex;
+    margin: -15px;
+    display: flex;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: wrap;
+      margin: -15px;
+    }
   }
 }
 
@@ -18,9 +28,16 @@
   border-bottom-right-radius: 4px;
   background-color: var(--white-color);
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  margin: 15px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    margin: 15px;
   }
+
+  // &:not(:last-child) {
+  //   margin-bottom: 30px;
+  // }
   // padding-bottom: 30px;
   // &:not(:last-child) {
   //   margin-right: 30px;
