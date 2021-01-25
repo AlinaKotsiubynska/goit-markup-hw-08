@@ -811,6 +811,13 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team__list {
+    margin: 0;
+    justify-content: space-between;
+  }
+}
+
 .team__member {
   padding-bottom: 24px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -824,6 +831,13 @@ img {
   .team__member {
     width: 354px;
     margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team__member {
+    width: 270px;
+    margin: 0;
   }
 }
 
